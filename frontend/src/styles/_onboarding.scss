@@ -1,0 +1,47 @@
+.onboarding-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color:var(--background-color-2);
+  }
+  
+  .onboarding-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+  }
+  
+  .onboarding-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .onboarding-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+  
+  .onboarding-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .onboarding-buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .onboarding-buttons button:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+  }

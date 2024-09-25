@@ -1,0 +1,51 @@
+/* Mobile-first styles */
+.meteo-container {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .meteo-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .meteo-image {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  /* Tablet and above */
+  @media (min-width: 768px) {
+    .meteo-container {
+      padding: 40px;
+    }
+  
+    .meteo-container h1 {
+      font-size: 2rem;
+    }
+  
+    .meteo-image {
+      max-width: 80%; 
+    }
+  }
+  
+  /* Desktop and above */
+  @media (min-width: 1024px) {
+    .meteo-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .meteo-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .meteo-image {
+      max-width: 70%;
+    }
+  }

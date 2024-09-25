@@ -1,0 +1,128 @@
+.home-container {
+  margin-top: 15%;
+  text-align: center;
+  padding: 20px;
+  font-size: small;
+}
+
+.titleHome {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #213849;
+}
+
+.buttons-home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button-container {
+  flex: 1 1 calc(33.333% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #38b9d6;
+}
+
+.button-container button {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  font-size: 16px;
+  background-color: #eeeeee;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container button:hover {
+  background-color: #d2d2d2;
+}
+
+.button-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.separator {
+  width: 80%;
+  margin: 30px auto;
+  border: none;
+  opacity: 0.5;
+  border-top: 2px solid rgb(93, 93, 93);
+}
+
+/* Mobile-first styles */
+.home-container {
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.button-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.separator {
+  width: 60%;
+  margin: 20px auto;
+  border: none;
+  border-top: 2px solid black; 
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #4c2180;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .home-container {
+    padding: 40px;
+  }
+
+  .separator {
+    width: 60%;
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .home-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .separator {
+    width: 60%;
+  }
+}

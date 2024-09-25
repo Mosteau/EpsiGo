@@ -1,0 +1,54 @@
+/* Mobile-first styles */
+.cv-container {
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.titleCv {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cv-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* L'image prend toute la largeur du conteneur */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 20px 0; /* Ajoute de la marge autour de l'image */
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .cv-container {
+    padding: 40px;
+  }
+
+  .titleCv {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .cv-image {
+    max-width: 80%; /* Ajuste la taille de l'image sur les écrans plus grands */
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .cv-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .titleCv {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .cv-image {
+    max-width: 70%; /* Ajuste encore la taille de l'image sur les écrans de bureau */
+  }
+}

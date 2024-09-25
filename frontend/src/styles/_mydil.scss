@@ -1,0 +1,97 @@
+/* Mobile-first styles */
+.mydil-container {
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.mydil-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.mydil-container p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.mydil-image {
+  width: 100%;
+  height: auto;
+  max-width: 350px; /* Limite la taille de l'image sur les petits écrans */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 auto; /* Centre l'image horizontalement */
+}
+
+.mydil-content {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.mydil-content h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #38b9d6;
+}
+
+.mydil-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.mydil-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.mydil-content li {
+  margin-bottom: 10px;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .mydil-container {
+    padding: 40px;
+  }
+
+  .mydil-container h1 {
+    font-size: 2rem;
+  }
+
+  .mydil-image {
+    max-width: 80%; /* Ajuste la taille de l'image sur les écrans plus grands */
+  }
+
+  .mydil-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .mydil-content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .mydil-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .mydil-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .mydil-image {
+    max-width: 70%; /* Ajuste encore la taille de l'image sur les écrans de bureau */
+  }
+
+  .mydil-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .mydil-content p {
+    font-size: 1.5rem;
+  }
+}
