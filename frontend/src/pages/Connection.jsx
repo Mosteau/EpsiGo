@@ -27,7 +27,7 @@ function Connection() {
       );
       if (res.status === 200) {
         setUser(res.data);
-        naviguate("/home");
+        naviguate("/onboarding");
       } else {
         console.error("Mauvais identifiants");
       }
@@ -47,8 +47,6 @@ function Connection() {
       <div>
         <form onSubmit={handleLogin} className="form-connection">
           <div className="form-group">
-            {/*             <label htmlFor="exampleInputEmail1">Adresse mail</label>
-             */}{" "}
             <input
               type="email"
               className="form-control"
@@ -59,8 +57,6 @@ function Connection() {
             />
           </div>
           <div className="form-group">
-            {/*             <label htmlFor="exampleInputPassword1">Mot de passe</label>
-             */}{" "}
             <input
               type="password"
               className="form-control"
@@ -70,11 +66,9 @@ function Connection() {
               required
             />
           </div>
-          <NavLink className="navlink-create-account" to="/onboarding">
-            <button className="button-connection" type="submit">
-              Se connecter
-            </button>
-          </NavLink>
+          <button className="button-connection" type="submit">
+            Se connecter
+          </button>
         </form>
         <div className="create-account">
           <p>Vous n'avez pas encore de compte ?</p>

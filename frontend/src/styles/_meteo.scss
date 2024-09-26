@@ -1,4 +1,3 @@
-/* Mobile-first styles */
 .meteo-container {
     padding: 20px;
     text-align: center;
@@ -19,7 +18,6 @@
     margin: 0 auto;
   }
   
-  /* Tablet and above */
   @media (min-width: 768px) {
     .meteo-container {
       padding: 40px;
@@ -34,7 +32,6 @@
     }
   }
   
-  /* Desktop and above */
   @media (min-width: 1024px) {
     .meteo-container {
       max-width: 800px;

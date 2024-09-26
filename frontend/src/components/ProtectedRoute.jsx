@@ -1,15 +1,19 @@
-const ProtectedRoute = ({ children }) => {
-  // const { user } = useContext(UserContext);
-  // const navigate = useNavigate();
+import { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { UserContext } from "../context/UserContext";
 
-  // useEffect(() => {
-  //   if (!user) {
-  //     navigate("/");
-  //   }
-  // }, [user]);
-  // desactivated for now, will be reactivated when the backend is ready for user context
+// eslint-disable-next-line react/prop-types
+function ProtectedRoute({ children }) {
+  const { user } = useContext(UserContext);
+  const navigate = useNavigate();
 
-  return children;
-};
+  useEffect(() => {
+    if (!user) {
+      navigate("/");
+    }
+  }, [user, navigate]);
+
+  return user ? children : null;
+}
 
 export default ProtectedRoute;

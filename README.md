@@ -1,6 +1,6 @@
 ## Concept
 
-Application Macollection pour répertoriée tous les jeux vidéos de sa collection personnelle, chaque utilisateur qui créé un compte aura accès uniquement à sa collection.
+Application EPSI Go pour les nouveaux étudiants du campus EPSI
 
 Application créée sur REACT VITE AVEC BASE DE DONNEE MYSQL SERVEUR NODE JS.
 

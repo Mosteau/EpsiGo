@@ -1,4 +1,3 @@
-/* Mobile-first styles */
 .utils-infos-container {
     padding: 20px;
     font-family: Arial, sans-serif;
@@ -36,7 +35,6 @@
     line-height: 1rem;
   }
   
-  /* Tablet and above */
   @media (min-width: 768px) {
     .utils-infos-container {
       padding: 40px;
@@ -55,7 +53,6 @@
     }
   }
   
-  /* Desktop and above */
   @media (min-width: 1024px) {
     .utils-infos-container {
       max-width: 800px;

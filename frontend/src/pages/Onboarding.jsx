@@ -44,10 +44,10 @@ function Onboarding() {
         <p>{step.text}</p>
         <div className="onboarding-buttons">
           <button type="button" onClick={prevStep} disabled={currentStep === 0}>
-            &#8592; {/* Flèche gauche */}
+            &#8592;
           </button>
           <button type="button" onClick={nextStep}>
-            &#8594; {/* Flèche droite */}
+            &#8594;
           </button>
         </div>
         <Stepper currentStep={currentStep} numberOfSteps={steps.length} />

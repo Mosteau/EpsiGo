@@ -27,8 +27,22 @@ const router = createBrowserRouter([
         ),
       },
       { path: "/createaccount", element: <Createaccount /> },
-      { path: "/onboarding", element: <Onboarding /> },
-      { path: "/forum", element: <Forum /> },
+      {
+        path: "/onboarding",
+        element: (
+          <ProtectedRoute>
+            <Onboarding />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: "/forum",
+        element: (
+          <ProtectedRoute>
+            <Forum />
+          </ProtectedRoute>
+        ),
+      },
     ],
   },
 ]);

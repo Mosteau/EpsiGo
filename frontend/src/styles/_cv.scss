@@ -1,4 +1,3 @@
-/* Mobile-first styles */
 .cv-container {
   padding: 20px;
   text-align: center;
@@ -14,13 +13,12 @@
 .cv-image {
   width: 100%;
   height: auto;
-  max-width: 100%; /* L'image prend toute la largeur du conteneur */
+  max-width: 100%; 
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin: 20px 0; /* Ajoute de la marge autour de l'image */
+  margin: 20px 0;
 }
 
-/* Tablet and above */
 @media (min-width: 768px) {
   .cv-container {
     padding: 40px;
@@ -32,11 +30,10 @@
   }
 
   .cv-image {
-    max-width: 80%; /* Ajuste la taille de l'image sur les écrans plus grands */
+    max-width: 80%; 
   }
 }
 
-/* Desktop and above */
 @media (min-width: 1024px) {
   .cv-container {
     max-width: 800px;
@@ -49,6 +46,6 @@
   }
 
   .cv-image {
-    max-width: 70%; /* Ajuste encore la taille de l'image sur les écrans de bureau */
+    max-width: 70%;
   }
 }

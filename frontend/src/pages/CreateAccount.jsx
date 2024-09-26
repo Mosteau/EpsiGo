@@ -57,8 +57,6 @@ function Createaccount() {
       <div className="form-create-account">
         <form onSubmit={handleSignUp}>
           <div className="form-group">
-            {/*             <label htmlFor="firstname">Nom :</label>
-             */}{" "}
             <input
               type="firstname"
               value={firstName}
@@ -70,8 +68,6 @@ function Createaccount() {
             />
           </div>
           <div className="form-group">
-            {/*             <label htmlFor="lasname">Prénom :</label>
-             */}{" "}
             <input
               type="lasname"
               value={lastName}
@@ -83,8 +79,6 @@ function Createaccount() {
             />
           </div>
           <div className="form-group">
-            {/*             <label htmlFor="email">Ton adresse mail :</label>
-             */}{" "}
             <input
               type="email"
               value={email}
@@ -96,8 +90,6 @@ function Createaccount() {
             />
           </div>
           <div className="form-group">
-            {/*             <label htmlFor="password">Mot de passe :</label>
-             */}{" "}
             <input
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -109,8 +101,6 @@ function Createaccount() {
             />
           </div>
           <div className="form-group">
-            {/*             <label htmlFor="confirmPassword">Confirmation mot de passe :</label>
-             */}{" "}
             <input
               type="password"
               value={confirmPassword}
@@ -137,7 +127,7 @@ function Createaccount() {
       </div>
       <div className="modal">
         <Modal
-          className="modal-create-account"
+          className="popup"
           isOpen={isModalOpen}
           onRequestClose={() => setIsModalOpen(false)}
           contentLabel="Compte créé"

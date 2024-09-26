@@ -120,10 +120,11 @@
 
 .popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80vh;
   background-color: var(--background-color);
   color: var(--color);
   display: flex;
@@ -137,44 +138,74 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50%;
-    height: 50%;
+    width: 90%;
+    height: 70%;
     background-color: var(--background-color-2);
     border-radius: 20px;
 
     .popup-title {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-family: var(--font-family-title);
       margin-bottom: 20px;
     }
 
     .popup-text {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: var(--font-family-text);
       margin-bottom: 20px;
     }
 
     .popup-button {
-      width: 50%;
+      width: 80%;
       height: 40px;
-      border-radius: 0;
+      border-radius: 5px;
       background-color: var(--background-color);
       color: var(--color);
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-family: var(--font-family-text);
       cursor: pointer;
     }
   }
 
   button {
-    width: 50%;
+    width: 80%;
     height: 40px;
-    border-radius: 0;
+    border-radius: 5px;
     background-color: var(--background-color);
     color: var(--color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-family-text);
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .popup {
+    width: 90%;
+    height: 70vh;
+
+    .popup-content {
+      width: 100%;
+      height: 80%;
+
+      .popup-title {
+        font-size: 1.2rem;
+      }
+
+      .popup-text {
+        font-size: 1rem;
+      }
+
+      .popup-button {
+        width: 90%;
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      width: 90%;
+      font-size: 1rem;
+    }
   }
 }
 

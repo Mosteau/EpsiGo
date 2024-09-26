@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import AOS from "aos";
+// eslint-disable-next-line import/no-extraneous-dependencies
 import "aos/dist/aos.css";
 import cloudLogo from "../assets/cloudy.png";
 import cv from "../assets/cv.png";
@@ -13,10 +15,13 @@ import UtilsInfos from "../components/UtilsInfos";
 import Cv from "../components/Cv";
 import Meteo from "../components/Meteo";
 import Mydil from "../components/Mydil";
+// eslint-disable-next-line import/no-named-as-default
+import UserContext from "../context/UserContext";
 
 function Home() {
   const navigate = useNavigate();
   const [showScroll, setShowScroll] = useState(false);
+  const { user } = useContext(UserContext);
 
   useEffect(() => {
     AOS.init({
@@ -55,7 +60,8 @@ function Home() {
   return (
     <div className="home-container">
       <h1 className="titleHome" data-aos="zoom-in">
-        Bienvenue sur le campus de l'EPSI
+        Bienvenue <p className="lastname-title">{user?.lastname}</p> sur le
+        campus de l'EPSI
       </h1>
       <div className="buttons-home">
         <div className="button-container" data-aos="zoom-in">

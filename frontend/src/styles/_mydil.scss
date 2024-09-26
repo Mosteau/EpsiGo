@@ -1,4 +1,3 @@
-/* Mobile-first styles */
 .mydil-container {
   padding: 20px;
   text-align: center;
@@ -18,10 +17,10 @@
 .mydil-image {
   width: 100%;
   height: auto;
-  max-width: 350px; /* Limite la taille de l'image sur les petits écrans */
+  max-width: 350px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  margin: 0 auto; /* Centre l'image horizontalement */
+  margin: 0 auto;
 }
 
 .mydil-content {
@@ -49,7 +48,6 @@
   margin-bottom: 10px;
 }
 
-/* Tablet and above */
 @media (min-width: 768px) {
   .mydil-container {
     padding: 40px;
@@ -60,7 +58,7 @@
   }
 
   .mydil-image {
-    max-width: 80%; /* Ajuste la taille de l'image sur les écrans plus grands */
+    max-width: 80%;
   }
 
   .mydil-content h2 {
@@ -71,8 +69,6 @@
     font-size: 1.2rem;
   }
 }
-
-/* Desktop and above */
 @media (min-width: 1024px) {
   .mydil-container {
     max-width: 800px;
@@ -84,7 +80,7 @@
   }
 
   .mydil-image {
-    max-width: 70%; /* Ajuste encore la taille de l'image sur les écrans de bureau */
+    max-width: 70%;
   }
 
   .mydil-content h2 {
